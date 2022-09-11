@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'build compilation'
+                sh '/home/jenkins/maven-3.8/bin/mvn package'
             }
         }
         stage('Test') { 
