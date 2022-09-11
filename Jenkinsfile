@@ -5,6 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh "mvn package"
+                echo "Maven build completed Successfully"
             }
         }
         stage('Test') {
