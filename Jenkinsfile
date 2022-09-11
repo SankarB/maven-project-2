@@ -2,7 +2,9 @@ pipeline {
     agent {label 'linux-slave-1' }
     stages {
         stage('Build') {
+            steps {
             sh "mvn package"
+            }
         }
 
         stage('Test') { 
