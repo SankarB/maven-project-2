@@ -5,7 +5,6 @@ pipeline {
             steps {
                 echo 'build compilation'
                 sh '/home/jenkins/maven-3.8/bin/mvn package'
-		echo 'test on branch'
             }
         }
         stage('Test') { 
